@@ -19,6 +19,7 @@ namespace MiniEmployeeManagement.Api
 
             // Add services to the container.
             builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 
             builder.Services.AddControllers();
 
